@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">bravocollect</string>
+    <string name="tv_texto1">¿Ya tienes cuenta?</string>
+    <string name="txt_usuario">Usuario</string>
+    <string name="txt_password">Contraseña</string>
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="tv_texto2">¿Aún no tienes cuenta?</string>
+    <string name="btn_signin">Crear Cuenta</string>
+    <string name="tv_lineL">―</string>
+    <string name="tv_lineR">―</string>
+</resources>
