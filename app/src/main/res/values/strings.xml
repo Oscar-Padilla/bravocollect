@@ -8,4 +8,11 @@
     <string name="btn_signin">Crear Cuenta</string>
     <string name="tv_lineL">―</string>
     <string name="tv_lineR">―</string>
+
+
+    //inicio_administrador
+    <string name="Buscar">Buscar</string>
+    <string name="Producto">Producto</string>
+
+
 </resources>
