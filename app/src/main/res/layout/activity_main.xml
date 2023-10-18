@@ -13,11 +13,13 @@
         android:layout_marginStart="139dp"
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="90dp"
+        android:onClick="signin"
         android:text="@string/btn_signin"
         app:backgroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
 
     <EditText
         android:id="@+id/txt_usuario"
@@ -46,11 +48,13 @@
         android:layout_marginStart="138dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="139dp"
+        android:onClick="login"
         android:text="@string/btn_login"
         app:backgroundTint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_password" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_password"
+        tools:ignore="UsingOnClickInXml" />
 
     <EditText
         android:id="@+id/txt_password"

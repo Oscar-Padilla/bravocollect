@@ -2,7 +2,9 @@ package com.example.bravocollect;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,5 +14,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Ola
         //soy joto
+    }
+
+    public void login (View view){
+        Intent ini_sesion = new Intent(this, InicioAdministrador.class);
+        startActivity(ini_sesion);
+    }
+    public void signin (View view){
+        Intent ini_sesion = new Intent(this, InicioAdministrador.class);
+        startActivity(ini_sesion);
     }
 }
