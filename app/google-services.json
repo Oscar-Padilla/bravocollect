@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1023285483405",
+    "project_id": "bravocollect",
+    "storage_bucket": "bravocollect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023285483405:android:b919299ceffbd347408fc4",
+        "android_client_info": {
+          "package_name": "com.example.bravocollect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrLGy8tujh-H-ektOvzWzh9Sbfnsicmsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
