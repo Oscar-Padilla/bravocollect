@@ -13,12 +13,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteY="50dp" />
 
     <ListView
         android:layout_width="319dp"
         android:layout_height="389dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
