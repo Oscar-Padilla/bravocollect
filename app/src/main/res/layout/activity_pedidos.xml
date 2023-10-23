@@ -8,17 +8,17 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="355dp"
         android:layout_height="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription,MissingConstraints"
         tools:layout_editor_absoluteY="50dp" />
 
     <ListView
         android:layout_width="319dp"
         android:layout_height="389dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
@@ -27,10 +27,10 @@
         android:id="@+id/searchView"
         android:layout_width="292dp"
         android:layout_height="72dp"
-        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        tools:layout_editor_absoluteY="148dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
