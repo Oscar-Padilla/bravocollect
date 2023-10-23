@@ -13,12 +13,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logotipo"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteY="40dp"
+        android:importantForAccessibility="no"
+        tools:ignore="MissingConstraints" />
 
     <ListView
         android:layout_width="386dp"
         android:layout_height="574dp"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="109dp" />
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="109dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
