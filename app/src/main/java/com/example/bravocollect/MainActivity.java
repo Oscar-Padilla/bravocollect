@@ -1,6 +1,8 @@
 package com.example.bravocollect;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Ola
     }
-    /*public void signin (View view){
+    public void login (View view){
         Intent ini_sesion = new Intent(this, InicioAdministrador.class);
         startActivity(ini_sesion);
-    }*/
+    }
 }
