@@ -20,45 +20,96 @@
         tools:ignore="ContentDescription" />
 
     <EditText
-        android:id="@+id/txt_SearchProduct"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="29dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/Buscar"
-        android:inputType="text"
-        android:textColorHint="#78909C"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="VisualLintTextFieldSize" />
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="357dp"
-        android:layout_height="196dp"
-        android:layout_marginTop="35dp"
-        android:divider="#DDDDDD"
-        android:dividerHeight="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_producto" />
-
-    <TextView
-        android:id="@+id/tv_producto"
+        android:id="@+id/editText_buscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="@string/Producto"
-        android:textColor="#333333"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/txt_Buscar"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColorHint="#78909C"
         android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listView_productos"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_SearchProduct" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btn_agregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/btn_Agregar_Carrito"
+        android:textSize="16sp"
+        app:backgroundTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView_productos" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:clickable="false"
+        android:importantForAccessibility="no"
+        android:scaleType="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rectangulo" />
+
+    <ImageButton
+        android:id="@+id/imageButton_carrito"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:srcCompat="@drawable/carrito"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_home"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:srcCompat="@drawable/home"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton_ajustes"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:srcCompat="@drawable/ajustes"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,UseAppTint,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

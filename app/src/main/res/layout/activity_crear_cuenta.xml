@@ -4,34 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CrearCuenta">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logotipo"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <TextView
-        android:id="@+id/tv_texto1"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="@string/tv_texto1"
+        android:text="@string/tv_texto3"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
-        android:id="@+id/editText_correo"
+        android:id="@+id/editText_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -44,14 +45,27 @@
         android:minHeight="48dp"
         android:textAlignment="center"
         android:textColorHint="#8D6E63"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_texto1"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="VisualLintTextFieldSize" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv_texto4"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+
     <EditText
-        android:id="@+id/editText_contraseña"
+        android:id="@+id/editText_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -64,74 +78,23 @@
         android:minHeight="48dp"
         android:textAlignment="center"
         android:textColorHint="#8D6E63"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_correo"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="VisualLintTextFieldSize" />
 
     <Button
-        android:id="@+id/btn_Iniciar_Sesion"
+        android:id="@+id/btn_crear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:onClick="login"
-        android:text="@string/btn_Iniciar_Sesion"
-        android:textSize="16sp"
-        app:backgroundTint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_contraseña"
-        tools:ignore="UsingOnClickInXml" />
-
-    <TextView
-        android:id="@+id/tv_texto2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:text="@string/tv_texto2"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Crear_Cuenta"
-        app:layout_constraintEnd_toStartOf="@+id/tv_lineR"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tv_lineL"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btn_Crear_Cuenta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="90dp"
         android:text="@string/btn_Crear_Cuenta"
         android:textSize="16sp"
         app:backgroundTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UsingOnClickInXml" />
-
-    <TextView
-        android:id="@+id/tv_lineL"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="62dp"
-        android:layout_marginBottom="167dp"
-        android:scaleX="8"
-        android:text="@string/tv_lineL"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_lineR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="167dp"
-        android:scaleX="8"
-        android:text="@string/tv_lineR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editText_password" />
 </androidx.constraintlayout.widget.ConstraintLayout>

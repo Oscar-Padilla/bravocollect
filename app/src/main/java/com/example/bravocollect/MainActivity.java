@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Ola
+
     }
     public void login (View view){
         Intent ini_sesion = new Intent(this, InicioAdministrador.class);

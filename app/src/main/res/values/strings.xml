@@ -1,15 +1,25 @@
 <resources>
     <string name="app_name">bravocollect</string>
+
+    //main_activity
     <string name="tv_texto1">¿Ya tienes cuenta?</string>
-    <string name="txt_usuario">Correo Electrónico</string>
-    <string name="txt_password">Contraseña</string>
-    <string name="btn_login">Iniciar Sesión</string>
     <string name="tv_texto2">¿Aún no tienes cuenta?</string>
-    <string name="btn_signin">Crear Cuenta</string>
+
+    <string name="txt_correo">Correo Electrónico</string>
+    <string name="txt_contraseña">Contraseña</string>
+
+    <string name="btn_Iniciar_Sesion">Iniciar Sesión</string>
+    <string name="btn_Crear_Cuenta">Crear Cuenta</string>
+
     <string name="tv_lineL">―</string>
     <string name="tv_lineR">―</string>
 
+    //crear_cuenta
+    <string name="tv_texto3">Ingresa tu Correo Electrónico</string>
+    <string name="tv_texto4">Ingresa tu Contraseña</string>
+
     //inicio_administrador
-    <string name="Buscar">Buscar Producto</string>
-    <string name="Producto">Producto</string>
+    <string name="txt_Buscar">Buscar producto</string>
+    <string name="tv_texto5">Producto</string>
+    <string name="btn_Agregar_Carrito">Agregar a carrito</string>
 </resources>
