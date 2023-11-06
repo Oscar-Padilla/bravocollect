@@ -22,4 +22,11 @@
     <string name="txt_Buscar">Buscar producto</string>
     <string name="tv_texto5">Producto</string>
     <string name="btn_Agregar_Carrito">Agregar a carrito</string>
+
+    //pedidos_administrador
+    <string name="tv_texto6">Pedidos</string>
+    <string name="btn_pedidos_administrador">Revisar Pedido</string>
+
+
+
 </resources>
