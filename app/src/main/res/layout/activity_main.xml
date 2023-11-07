@@ -51,7 +51,7 @@
         tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
-        android:id="@+id/editText_contraseña"
+        android:id="@+id/editText_contrasena"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -82,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/editText_contrasena"
         tools:ignore="UsingOnClickInXml" />
 
     <TextView

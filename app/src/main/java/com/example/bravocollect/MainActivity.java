@@ -16,23 +16,23 @@ private EditText et1,et2;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Ola
-        et1 = (EditText)findViewById(R.id.editText_correo);
-        et2 = (EditText)findViewById(R.id.editText_contraseña);
+        et1 = findViewById(R.id.editText_correo);
+        et2 = findViewById(R.id.editText_contrasena);
 
 
     }
     public void login (View view){
 
         String correo = et1.getText().toString();
-        String contraseña = et2.getText().toString();
+        String contrasena = et2.getText().toString();
 
         if(correo.length() == 0){
             Toast.makeText(this,"Debes de ingresar tu correo",Toast.LENGTH_SHORT).show();
         }
-        if(contraseña.length() == 0){
+        if(contrasena.length() == 0){
             Toast.makeText(this,"Debes de ingresar tu contraseña",Toast.LENGTH_SHORT).show();
         }
-        if(correo.length() !=0 && contraseña.length() !=0){
+        if(correo.length() !=0 && contrasena.length() !=0){
             Toast.makeText(this,"Iniciando sesión...",Toast.LENGTH_SHORT).show();
 
 
@@ -41,7 +41,7 @@ private EditText et1,et2;
 
             startActivity(ini_sesion);
         }
-
+//ola
 
     }
 
