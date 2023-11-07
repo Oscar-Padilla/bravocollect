@@ -1,6 +1,7 @@
 package com.example.bravocollect;
 
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
@@ -16,6 +17,7 @@ import java.util.Map;
 public class InicioAdministrador extends AppCompatActivity {
 
     private ListView lv1;
+    private EditText et1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,5 +51,9 @@ public class InicioAdministrador extends AppCompatActivity {
         }
 
         lv1.setAdapter(adapter);
+
+        et1 = findViewById(R.id.editText_buscar);
+        String dato = getIntent().getStringExtra("dato");
+        et1.setText("Hola "+dato);
     }
 }
