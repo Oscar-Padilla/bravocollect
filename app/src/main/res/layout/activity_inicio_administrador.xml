@@ -8,17 +8,6 @@
     android:background="@color/white"
     tools:context=".InicioAdministrador">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imagotipo"
-        tools:ignore="ContentDescription" />
-
     <EditText
         android:id="@+id/editText_buscar"
         android:layout_width="wrap_content"
@@ -32,7 +21,7 @@
         android:textAlignment="textStart"
         android:textColorHint="#78909C"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill" />
 
@@ -45,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -68,11 +57,12 @@
         android:layout_marginStart="50dp"
         android:layout_marginBottom="12dp"
         android:background="#00FFFFFF"
+        android:onClick="carrito"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:srcCompat="@drawable/carrito"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,UsingOnClickInXml" />
 
     <ImageButton
         android:id="@+id/imageButton_home"
@@ -80,12 +70,13 @@
         android:layout_height="50dp"
         android:layout_marginBottom="10dp"
         android:background="#00FFFFFF"
+        android:onClick="home"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:srcCompat="@drawable/home"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,UsingOnClickInXml" />
 
     <ImageButton
         android:id="@+id/imageButton_ajustes"
@@ -94,11 +85,26 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="12dp"
         android:background="#00FFFFFF"
+        android:onClick="ajustes"
         android:scaleType="centerInside"
         android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:srcCompat="@drawable/ajustes"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck,UseAppTint,TouchTargetSizeCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,UseAppTint,UsingOnClickInXml" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        android:onClick="pedidos"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagotipo"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,UsingOnClickInXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

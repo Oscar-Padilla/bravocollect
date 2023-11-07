@@ -33,9 +33,7 @@ private EditText et1,et2;
             Toast.makeText(this,"Debes de ingresar tu contraseña",Toast.LENGTH_SHORT).show();
         }
         if(correo.length() !=0 && contrasena.length() !=0){
-            Toast.makeText(this,"Iniciando sesión...",Toast.LENGTH_SHORT).show();
-
-
+            Toast.makeText(this, "Inicio de sesión exitoso, Bienvenido", Toast.LENGTH_LONG).show();
             Intent ini_sesion = new Intent(this, InicioAdministrador.class);
             ini_sesion.putExtra("dato",et1.getText().toString());
 
