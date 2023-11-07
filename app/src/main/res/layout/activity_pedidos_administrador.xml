@@ -19,26 +19,13 @@
 
     <ListView
         android:id="@+id/listView_productos"
-        android:layout_width="409dp"
-        android:layout_height="425dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <Button
-        android:id="@+id/btn_agregar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="425dp"
         android:layout_marginTop="30dp"
-        android:text="@string/btn_pedidos_administrador"
-        android:textSize="16sp"
-        app:backgroundTint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listView_productos" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -98,15 +85,14 @@
         android:id="@+id/textView3"
         android:layout_width="181dp"
         android:layout_height="44dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="32dp"
         android:text="@string/tv_texto6"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/listView_productos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.548" />
+        tools:ignore="TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,8 +25,7 @@
 
     //pedidos_administrador
     <string name="tv_texto6">Pedidos</string>
-    <string name="btn_pedidos_administrador">Revisar Pedido</string>
-
+    <string name="btn_pedidos_administrador">Revisar pedido</string>
 
 
 </resources>
