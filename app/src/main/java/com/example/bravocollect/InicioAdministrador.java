@@ -49,5 +49,6 @@ public class InicioAdministrador extends AppCompatActivity {
         }
 
         lv1.setAdapter(adapter);
+        //ola
     }
 }
