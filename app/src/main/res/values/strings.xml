@@ -27,5 +27,11 @@
     <string name="tv_texto6">Pedidos</string>
     <string name="btn_pedidos_administrador">Revisar pedido</string>
 
+    //settings
+    <string name="tv_texto7">Usuario</string>
+    <string name="tv_texto8">Siguenos en Instagram</string>
+    <string name="tv_texto9">Instagram</string>
+    <string name="tv_textoRB1">Easter Egg</string>
+    <string name="tv_textoCB1">Tócame</string>
 
 </resources>

@@ -4,28 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PedidosAdministrador">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imagotipo"
-        tools:ignore="ContentDescription" />
-
-    <ListView
-        android:id="@+id/listView_productos"
-        android:layout_width="wrap_content"
-        android:layout_height="425dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+    tools:context=".WebViewITA">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -84,18 +63,14 @@
         app:srcCompat="@drawable/ajustes"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,UseAppTint,UsingOnClickInXml" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="181dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/tv_texto6"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextSizeCheck" />
+    <WebView
+        android:id="@+id/wv1"
+        android:layout_width="409dp"
+        android:layout_height="659dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
