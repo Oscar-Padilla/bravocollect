@@ -18,7 +18,7 @@ public class WebViewITA extends AppCompatActivity {
 
         wv = findViewById(R.id.wv1);
 
-        String URL = "www.instagram.com/dormi_ita_/?next=%2F";
+        String URL = "www.instagram.com/dormi_ita_";
         wv.setWebViewClient(new WebViewClient());
         wv.loadUrl("http://"+URL);
 
