@@ -3,6 +3,7 @@ package com.example.bravocollect;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -15,6 +16,7 @@ import java.util.Map;
 
 public class InicioAdministrador extends AppCompatActivity {
 
+     private EditText et1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +48,9 @@ public class InicioAdministrador extends AppCompatActivity {
 
         lv1.setAdapter(adapter);
         //ola
+        et1 = (EditText) findViewById(R.id.editText_buscar);
+        String dato = getIntent().getStringExtra("dato");
+        et1.setText("Hola "+dato);
     }
     public void pedidos(View view) {
         Intent ini_sesion = new Intent(this, PedidosAdministrador.class);
@@ -65,4 +70,8 @@ public class InicioAdministrador extends AppCompatActivity {
         Intent ini_sesion = new Intent(this, Settings.class);
         startActivity(ini_sesion);
     }
+
+
+
+
 }
