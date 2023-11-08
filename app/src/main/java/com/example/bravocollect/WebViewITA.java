@@ -20,7 +20,7 @@ public class WebViewITA extends AppCompatActivity {
 
         String URL = "www.instagram.com/dormi_ita_";
         wv.setWebViewClient(new WebViewClient());
-        wv.loadUrl("http://"+URL);
+        wv.loadUrl("https://"+URL);
 
     }
 
