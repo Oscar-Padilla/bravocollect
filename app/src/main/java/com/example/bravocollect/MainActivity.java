@@ -43,6 +43,11 @@ private EditText et1,et2;
 
     }
 
+    public void crear (View view) {
+        Intent ini = new Intent(this, CrearCuenta.class);
+        startActivity(ini);
+    }
+
 
 
 }

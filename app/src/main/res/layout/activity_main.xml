@@ -103,6 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="90dp"
+        android:onClick="crear"
         android:text="@string/btn_Crear_Cuenta"
         android:textSize="16sp"
         app:backgroundTint="#000000"
