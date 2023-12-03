@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 public class ABC_Productos extends AppCompatActivity {
 
@@ -142,6 +144,31 @@ public class ABC_Productos extends AppCompatActivity {
 
         } else {
             Toast.makeText(this, "Debes llenar todos los campos", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+
+    public void iniciarEscaner(View view) {
+        IntentIntegrator integrator = new IntentIntegrator(this);
+        integrator.setOrientationLocked(false);
+        integrator.initiateScan();
+    }
+
+    // Manejar el resultado del escaneo
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        if (result != null) {
+            if (result.getContents() != null) {
+                // Actualizar el EditText del código con el resultado del escaneo
+                et_codigo.setText(result.getContents());
+            } else {
+                // Mensaje si el escaneo fue cancelado
+                // Puedes agregar una notificación o acción aquí
+            }
+        } else {
+            super.onActivityResult(requestCode, resultCode, data);
         }
     }
 

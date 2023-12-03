@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".ABC_Productos">
 
+    <ImageButton
+        android:id="@+id/imageButton_codigo_barras"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="#00FFFFFF"
+        android:onClick="iniciarEscaner"
+        android:scaleType="centerInside"
+        android:tint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txt_descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/barras"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,UseAppTint,UsingOnClickInXml" />
+
     <Button
         android:id="@+id/btn_Iniciar_Sesion3"
         android:layout_width="wrap_content"
@@ -67,15 +82,15 @@
 
     <EditText
         android:id="@+id/txt_codigo"
-        android:layout_width="360dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="256dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:hint="@string/txt_codigo"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/txt_descripcion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_codigo_barras"
+        app:layout_constraintHorizontal_bias="0.278"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -85,7 +100,7 @@
         android:layout_marginTop="4dp"
         android:text="@string/app_name"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_codigo"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_codigo_barras"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
