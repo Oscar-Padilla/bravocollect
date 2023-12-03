@@ -88,74 +88,62 @@ public class ABC_Productos extends AppCompatActivity {
 
     }
 
-
     public void Eliminar(View view){
-        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"administrador", null, 1);
-        SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper
+                (this, "administracion", null, 1);
+        SQLiteDatabase BaseDatabase = admin.getWritableDatabase();
 
         String codigo = et_codigo.getText().toString();
 
         if(!codigo.isEmpty()){
-            int cantidad = BaseDeDatos.delete("articulos", "codigo='" + codigo + "'", null);
 
-            BaseDeDatos.close();
+            int cantidad = BaseDatabase.delete("articulos", "codigo=" + codigo, null);
+            BaseDatabase.close();
 
             et_codigo.setText("");
             et_descripcion.setText("");
             et_precio.setText("");
 
-            if (cantidad ==1){
-                Toast.makeText(this, "El producto fue eliminado exitosamente", Toast.LENGTH_SHORT).show();
+            if(cantidad == 1){
+                Toast.makeText(this, "Producto eliminado exitosamente", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "El producto no oexiste", Toast.LENGTH_SHORT).show();
-            }
-
-        } else{
-            Toast.makeText(this, "Debes de introducir el codigo del producto", Toast.LENGTH_SHORT).show();
-        }
-
-    }
-
-    public void Modificar(View view){
-        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"administrador", null, 1);
-        SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
-
-        String codigo = et_codigo.getText().toString();
-        String precio = et_precio.getText().toString();
-        String descripcion = et_descripcion.getText().toString();
-
-
-        if (!codigo.isEmpty() && !descripcion.isEmpty() && !precio.isEmpty()){
-
-            ContentValues registro =new ContentValues();
-            registro.put("codigo", codigo);
-            registro.put("descripcion", descripcion);
-            registro.put("precio",precio);
-
-            int cantidad = BaseDeDatos.update("articulos", registro, "codigo='" + codigo + "'", null);
-            BaseDeDatos.close();
-
-
-            if(cantidad ==1){
-
-                Toast.makeText(this, "El producto fue actualizado correctamente", Toast.LENGTH_SHORT).show();
-
-            } else{
-
                 Toast.makeText(this, "El producto no existe", Toast.LENGTH_SHORT).show();
-
             }
 
         } else {
-
-            Toast.makeText(this, "Debes de llenar todos los campos", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Debes de introducir el código del producto", Toast.LENGTH_SHORT).show();
         }
-
-
-
-
     }
 
+    //Método para modificar un artículo o producto
+    public void Modificar(View view){
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
+        SQLiteDatabase BaseDatabase = admin.getWritableDatabase();
+
+        String codigo = et_codigo.getText().toString();
+        String descripcion = et_descripcion.getText().toString();
+        String precio = et_precio.getText().toString();
+
+        if(!codigo.isEmpty() && !descripcion.isEmpty() && !precio.isEmpty()){
+
+            ContentValues registro = new ContentValues();
+            registro.put("codigo", codigo);
+            registro.put("descripcion", descripcion);
+            registro.put("precio", precio);
+
+            int cantidad = BaseDatabase.update("articulos", registro, "codigo=" + codigo, null);
+            BaseDatabase.close();
+
+            if(cantidad == 1){
+                Toast.makeText(this, "Producto modificado correctamente", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "El producto no existe", Toast.LENGTH_SHORT).show();
+            }
+
+        } else {
+            Toast.makeText(this, "Debes llenar todos los campos", Toast.LENGTH_SHORT).show();
+        }
+    }
 
     public void pedidos(View view) {
         Intent ini_sesion = new Intent(this, PedidosAdministrador.class);
