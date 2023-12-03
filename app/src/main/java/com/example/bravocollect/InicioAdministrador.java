@@ -52,6 +52,13 @@ public class InicioAdministrador extends AppCompatActivity {
         String dato = getIntent().getStringExtra("dato");
         et1.setText("Hola "+dato);
     }
+
+    public void administrar_productos(View view) {
+        Intent ini_sesion = new Intent(this, ABC_Productos.class);
+        startActivity(ini_sesion);
+    }
+
+
     public void pedidos(View view) {
         Intent ini_sesion = new Intent(this, PedidosAdministrador.class);
         startActivity(ini_sesion);

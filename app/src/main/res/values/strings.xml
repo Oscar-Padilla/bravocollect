@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">bravocollect</string>
+    <string name="app_name">Bravocollect</string>
 
     //main_activity
     <string name="tv_texto1">¿Ya tienes cuenta?</string>
@@ -22,6 +22,8 @@
     <string name="txt_Buscar">Buscar producto</string>
     <string name="tv_texto5">Producto</string>
     <string name="btn_Agregar_Carrito">Agregar a carrito</string>
+    <string name="button_administrar">Administrar productos</string>
+
 
     //pedidos_administrador
     <string name="tv_texto6">Pedidos</string>
@@ -33,5 +35,15 @@
     <string name="tv_texto9">Instagram</string>
     <string name="tv_textoRB1">Easter Egg</string>
     <string name="tv_textoCB1">Tócame</string>
+
+    //ABC_Productos
+    <string name="txt_codigo">Código del producto</string>
+    <string name="txt_descripcion">Descripción del producto</string>
+    <string name="txt_precio">Precio del producto</string>
+    <string name="BotonRegistrar">Registrar producto</string>
+    <string name="BotonBuscar">Buscar producto</string>
+    <string name="BotonEliminar">Eliminar producto</string>
+    <string name="BotonModificar">Modificar producto</string>
+
 
 </resources>
