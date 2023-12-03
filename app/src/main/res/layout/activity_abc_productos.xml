@@ -21,65 +21,6 @@
         app:srcCompat="@drawable/barras"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,UseAppTint,UsingOnClickInXml" />
 
-    <Button
-        android:id="@+id/btn_Iniciar_Sesion3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:onClick="Buscar"
-        android:text="@string/BotonBuscar"
-        android:textSize="16sp"
-        app:backgroundTint="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Iniciar_Sesion4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UsingOnClickInXml" />
-
-    <Button
-        android:id="@+id/btn_Iniciar_Sesion4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:onClick="Registrar"
-        android:text="@string/BotonRegistrar"
-        android:textSize="16sp"
-        app:backgroundTint="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Iniciar_Sesion5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UsingOnClickInXml" />
-
-    <Button
-        android:id="@+id/btn_Iniciar_Sesion5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:onClick="Modificar"
-        android:text="@string/BotonModificar"
-        android:textSize="16sp"
-        app:backgroundTint="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Iniciar_Sesion6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UsingOnClickInXml" />
-
-    <Button
-        android:id="@+id/btn_Iniciar_Sesion6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="92dp"
-        android:onClick="Eliminar"
-        android:text="@string/BotonEliminar"
-        android:textSize="16sp"
-        app:backgroundTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UsingOnClickInXml" />
-
     <EditText
         android:id="@+id/txt_codigo"
         android:layout_width="256dp"
@@ -118,18 +59,19 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <EditText
         android:id="@+id/txt_precio"
         android:layout_width="361dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="12dp"
         android:ems="10"
         android:hint="@string/txt_precio"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Iniciar_Sesion3"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <ImageView
         android:id="@+id/imageView4"
@@ -187,5 +129,57 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:srcCompat="@drawable/ajustes"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,UseAppTint,UsingOnClickInXml" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="191dp"
+        android:layout_height="198dp"
+        android:layout_marginBottom="84dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_Iniciar_Sesion3"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:onClick="Buscar"
+            android:text="@string/BotonBuscar"
+            android:textSize="16sp"
+            app:backgroundTint="#000000"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btn_Iniciar_Sesion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Registrar"
+            android:text="@string/BotonRegistrar"
+            android:textSize="16sp"
+            app:backgroundTint="#000000"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btn_Iniciar_Sesion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Modificar"
+            android:text="@string/BotonModificar"
+            android:textSize="16sp"
+            app:backgroundTint="#000000"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btn_Iniciar_Sesion6"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:onClick="Eliminar"
+            android:text="@string/BotonEliminar"
+            android:textSize="16sp"
+            app:backgroundTint="#000000"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

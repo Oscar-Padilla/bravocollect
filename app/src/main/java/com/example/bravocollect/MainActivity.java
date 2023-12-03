@@ -25,7 +25,7 @@ private EditText et1,et2;
 
 
         mediaPlayer = MediaPlayer.create(this, R.raw.sweet_as_honey);
-        mediaPlayer.setLooping(true); // Para que se repita indefinidamente
+        mediaPlayer.setLooping(true);
         mediaPlayer.start();
     }
     public void login (View view){
@@ -57,8 +57,7 @@ private EditText et1,et2;
 
     protected void onDestroy() {
         super.onDestroy();
-        // Detener y liberar recursos del reproductor cuando la actividad se destruye
-        if (mediaPlayer != null) {
+       if (mediaPlayer != null) {
             mediaPlayer.stop();
             mediaPlayer.release();
             mediaPlayer = null;
