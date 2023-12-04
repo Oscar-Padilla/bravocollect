@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -26,7 +25,7 @@ public class ABC_Productos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abc_productos);
-
+//h
         et_codigo =(EditText) findViewById(R.id.txt_codigo);
         et_descripcion =(EditText) findViewById(R.id.txt_descripcion);
         et_precio =(EditText) findViewById(R.id.txt_precio);
