@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -18,7 +19,9 @@ public class ABC_Productos extends AppCompatActivity {
 
     private EditText et_codigo, et_descripcion, et_precio;
 
+    private ImageView imageview_producto;
 
+    int num_aleatorio = (int) (Math.random()*10);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +30,43 @@ public class ABC_Productos extends AppCompatActivity {
         et_codigo =(EditText) findViewById(R.id.txt_codigo);
         et_descripcion =(EditText) findViewById(R.id.txt_descripcion);
         et_precio =(EditText) findViewById(R.id.txt_precio);
+        imageview_producto= (ImageView) findViewById(R.id.imageview_producto);
+
+        int id;
+        if(num_aleatorio ==0 || num_aleatorio ==10){
+            id = getResources().getIdentifier("coca", "drawable", getPackageName());
+            imageview_producto.setImageResource(id);
+        } else if(num_aleatorio ==1 ){
+            id = getResources().getIdentifier("pan", "drawable", getPackageName());
+            imageview_producto.setImageResource(id);
+        } else if(num_aleatorio ==9){
+            id = getResources().getIdentifier("fruta", "drawable", getPackageName());
+            imageview_producto.setImageResource(id);
+        }else if(num_aleatorio ==2 ){
+            id = getResources().getIdentifier("jabon", "drawable", getPackageName());
+            imageview_producto.setImageResource(id);
+        } else if( num_aleatorio ==8){
+            id = getResources().getIdentifier("verduras", "drawable", getPackageName());
+            imageview_producto.setImageResource(id);
+        }else if(num_aleatorio ==3 ){
+            id = getResources().getIdentifier("tortillas", "drawable", getPackageName());
+            imageview_producto.setImageResource(id);
+        } else if( num_aleatorio ==7){
+            id = getResources().getIdentifier("sabritas", "drawable", getPackageName());
+            imageview_producto.setImageResource(id);
+        }else if(num_aleatorio ==4 ){
+            id = getResources().getIdentifier("leche", "drawable", getPackageName());
+            imageview_producto.setImageResource(id);
+        }
+        else if( num_aleatorio ==5 || num_aleatorio ==6){
+            id = getResources().getIdentifier("chocolate", "drawable", getPackageName());
+            imageview_producto.setImageResource(id);
+        }
+
+
+
+
+
 
     }
 
