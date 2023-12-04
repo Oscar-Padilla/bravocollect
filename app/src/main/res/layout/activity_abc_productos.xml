@@ -64,11 +64,11 @@
         android:id="@+id/txt_precio"
         android:layout_width="361dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:hint="@string/txt_precio"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent" />
@@ -181,5 +181,16 @@
             app:backgroundTint="#000000"
             tools:ignore="UsingOnClickInXml" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="135dp"
+        android:layout_height="177dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/imagotipo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
