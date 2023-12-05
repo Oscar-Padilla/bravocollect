@@ -63,6 +63,11 @@ public class InicioAdministrador extends AppCompatActivity {
         startActivity(ini_sesion);
     }
 
+    public void recordatorios(View view) {
+        Intent ini_sesion = new Intent(this, Bitacora.class);
+        startActivity(ini_sesion);
+    }
+
 
     public void pedidos(View view) {
         Intent ini_sesion = new Intent(this, PedidosAdministrador.class);

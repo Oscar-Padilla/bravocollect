@@ -24,6 +24,7 @@
     <string name="btn_Agregar_Carrito">Agregar a carrito</string>
     <string name="button_administrar">Administrar productos</string>
     <string name="button_administrar_usuarios">Administrar usuarios</string>
+    <string name="Recordatorios">Recordatorios</string>
 
 
     //pedidos_administrador
@@ -36,6 +37,8 @@
     <string name="tv_texto9">Instagram</string>
     <string name="tv_textoRB1">Easter Egg</string>
     <string name="tv_textoCB1">Tócame</string>
+    <string name="tittletickets">Administrar Tickets</string>
+
 
     //ABC_Productos
     <string name="txt_codigo">Código del producto</string>
@@ -52,6 +55,14 @@
     <string name="txc_datos">Datos del cliente</string>
     <string name="bototnGuardar">Guardar</string>
     <string name="bototnBusacr">Buscar</string>
+
+    //Bitacora
+    <string name="boton_bitacora">Guardar</string>
+    <string name="titulo_bitacora">Recordatorios</string>
+
+    //SD
+    <string name="txt_nombre_ticket">Nombre del ticket</string>
+    <string name="botonConsultar">Consultar</string>
 
 
 

@@ -41,6 +41,11 @@ public class Settings extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void Tickets (View view) {
+        Intent i = new Intent(this, SD.class);
+        startActivity(i);
+    }
+
     //Barra de navegación
     public void carrito(View view) {
         Intent ini_sesion = new Intent(this, PedidosAdministrador.class);
