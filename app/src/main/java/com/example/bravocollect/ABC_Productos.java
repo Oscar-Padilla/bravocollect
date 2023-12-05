@@ -25,7 +25,7 @@ public class ABC_Productos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abc_productos);
-//h
+
         et_codigo =(EditText) findViewById(R.id.txt_codigo);
         et_descripcion =(EditText) findViewById(R.id.txt_descripcion);
         et_precio =(EditText) findViewById(R.id.txt_precio);
@@ -156,7 +156,6 @@ public class ABC_Productos extends AppCompatActivity {
         }
     }
 
-    //Método para modificar un artículo o producto
     public void Modificar(View view){
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "administracion", null, 1);
         SQLiteDatabase BaseDatabase = admin.getWritableDatabase();
@@ -194,17 +193,13 @@ public class ABC_Productos extends AppCompatActivity {
         integrator.initiateScan();
     }
 
-    // Manejar el resultado del escaneo
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if (result != null) {
             if (result.getContents() != null) {
-                // Actualizar el EditText del código con el resultado del escaneo
                 et_codigo.setText(result.getContents());
             } else {
-                // Mensaje si el escaneo fue cancelado
-                // Puedes agregar una notificación o acción aquí
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data);
@@ -216,7 +211,6 @@ public class ABC_Productos extends AppCompatActivity {
         startActivity(ini_sesion);
     }
 
-    //Barra de navegación
     public void carrito(View view) {
         Intent ini_sesion = new Intent(this, PedidosAdministrador.class);
         startActivity(ini_sesion);
