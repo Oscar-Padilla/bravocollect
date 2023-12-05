@@ -58,6 +58,11 @@ public class InicioAdministrador extends AppCompatActivity {
         startActivity(ini_sesion);
     }
 
+    public void administrar_usuarios(View view) {
+        Intent ini_sesion = new Intent(this, Usuarios_agenda.class);
+        startActivity(ini_sesion);
+    }
+
 
     public void pedidos(View view) {
         Intent ini_sesion = new Intent(this, PedidosAdministrador.class);

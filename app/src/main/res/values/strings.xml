@@ -23,6 +23,7 @@
     <string name="tv_texto5">Producto</string>
     <string name="btn_Agregar_Carrito">Agregar a carrito</string>
     <string name="button_administrar">Administrar productos</string>
+    <string name="button_administrar_usuarios">Administrar usuarios</string>
 
 
     //pedidos_administrador
@@ -44,6 +45,14 @@
     <string name="BotonBuscar">Buscar producto</string>
     <string name="BotonEliminar">Eliminar producto</string>
     <string name="BotonModificar">Modificar producto</string>
+
+    //Usuarios_agenda
+    <string name="titulo">Clientes</string>
+    <string name="txt_nombre">Nombre del cliente</string>
+    <string name="txc_datos">Datos del cliente</string>
+    <string name="bototnGuardar">Guardar</string>
+    <string name="bototnBusacr">Buscar</string>
+
 
 
 </resources>
